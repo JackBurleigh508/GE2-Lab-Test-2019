@@ -34,4 +34,9 @@ public class Seek : SteeringBehaviour
             target = targetGameObject.transform.position;
         }
     }
+
+    public void Start()
+    {
+        targetGameObject = this.GetComponent<Fighter>().target;
+    }
 }

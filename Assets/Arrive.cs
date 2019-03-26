@@ -23,4 +23,9 @@ public class Arrive: SteeringBehaviour
             targetPosition = targetGameObject.transform.position;
         }
     }
+
+    public void Start()
+    {
+        targetGameObject = this.GetComponent<Fighter>().target;
+    }
 }
